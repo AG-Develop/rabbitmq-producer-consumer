@@ -1,0 +1,25 @@
+{
+    "name": "ag-develop/rabbitmq-producer-consumer",
+    "type": "library",
+    "require": {
+        "psr/log": "^3.0",
+        "ag-develop/interfaces": "dev-feature/basic-interfaces-defined",
+        "php-amqplib/php-amqplib": "^3.2"
+    },
+    "license": "MIT",
+    "repositories" : [
+        {
+            "type" : "vcs",
+            "url" : "https://github.com/ag-develop/interfaces"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "AgDevelop\\RabbitMqProducerConsumer\\": "src/",
+            "AgDevelop\\RabbitMqProducerConsumer\\Test\\": "test/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    }
+}
