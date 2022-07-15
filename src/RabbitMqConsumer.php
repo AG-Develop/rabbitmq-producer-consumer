@@ -3,7 +3,6 @@
 namespace AgDevelop\RabbitMqProducerConsumer;
 
 use AgDevelop\Interface\Json\DeserializerBuilderInterface;
-use AgDevelop\Interface\Json\DeserializerInterface;
 use AgDevelop\RabbitMqProducerConsumer\Exception\HandlerException;
 use AgDevelop\RabbitMqProducerConsumer\Exception\UnableToDetermineHandlerException;
 use DateTimeInterface;

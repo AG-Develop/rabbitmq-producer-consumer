@@ -4,5 +4,5 @@ namespace AgDevelop\RabbitMqProducerConsumer\Routing;
 
 interface RoutingStrategyInterface
 {
-    public function getRoutingKey(object $object) : string;
+    public function getRoutingKey(object $object): string;
 }

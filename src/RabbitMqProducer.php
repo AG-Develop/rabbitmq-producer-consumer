@@ -25,7 +25,7 @@ class RabbitMqProducer implements ProducerInterface
         $amqpMessage = new AMQPMessage($this->serializer->serialize($message));
         $routingKey = $this->routingStrategy->getRoutingKey($message);
 
-        $this->logger?->info('Publishing message with routing key ' . $routingKey);
+        $this->logger?->info('Publishing message with routing key '.$routingKey);
         $this->channel->basic_publish(
             msg: $amqpMessage,
             routing_key: $routingKey,
