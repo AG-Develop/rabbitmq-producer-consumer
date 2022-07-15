@@ -77,6 +77,7 @@ class RabbitMqConsumer implements ConsumerInterface
      */
     public function consume(): void
     {
+        $this->logger?->debug('Consuming...');
         $this->channel->wait(null, $this->nonBlocking, $this->timeout);
     }
 }
