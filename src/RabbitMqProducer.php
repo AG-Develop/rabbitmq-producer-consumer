@@ -1,10 +1,9 @@
 <?php
 
-namespace AgDevelop\MessageProducerConsumer;
+namespace AgDevelop\RabbitMqProducerConsumer;
 
 use AgDevelop\Interface\Json\SerializableInterface;
 use AgDevelop\Interface\Json\SerializerInterface;
-use AgDevelop\RabbitMqProducerConsumer\ProducerInterface;
 use AgDevelop\RabbitMqProducerConsumer\Routing\RoutingStrategyInterface;
 use PhpAmqpLib\Channel\AMQPChannel;
 use PhpAmqpLib\Message\AMQPMessage;
